@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SlideCraft</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<h1>SlideCraft</h1>
+
+<button onclick="newSlides()">New</button>
+<button onclick="saveSlides()">Save</button>
+<button onclick="present()">Present</button>
+
+<div class="container">
+
+    <div>
+        <h2>Markdown Editor</h2>
+        <textarea id="editor" oninput="updateSlides()"></textarea>
+    </div>
+
+    <div>
+        <h2>Slide Preview</h2>
+
+        <div id="slide" class="slide"></div>
+
+        <button onclick="previous()">Left</button>
+        <button onclick="fullScreen()">Full Screen</button>
+        <button onclick="next()">Right</button>
+
+        <p id="count">1 / 1</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

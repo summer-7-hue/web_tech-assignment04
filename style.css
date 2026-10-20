@@ -1,0 +1,40 @@
+css
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.container > div {
+    width: 50%;
+}
+
+textarea {
+    width: 95%;
+    height: 300px;
+}
+
+.slide {
+    background: white;
+    border: 1px solid black;
+    padding: 20px;
+    height: 260px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+}
+
+#count {
+    text-align: center;
+}
+
+#presentation {
+    background: white;
+    padding: 30px;
+}
